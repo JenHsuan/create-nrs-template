@@ -1,0 +1,24 @@
+{
+  "name": "create-nrs-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JenHsuan/create-nrs-template.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JenHsuan/create-nrs-template/issues"
+  },
+  "homepage": "https://github.com/JenHsuan/create-nrs-template#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "shelljs": "^0.8.4"
+  }
+}
