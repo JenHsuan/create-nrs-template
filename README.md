@@ -1,10 +1,10 @@
-## Create-nrs-template
+## create-nrs-web
 * It's a npx command tool to create a project with default folders and files for Next.js, Redux, and Styled-Components.
 
 ### Usages
 * Installation
 ```
-npx create-nrs-template
+npx create-nrs-web
 ```
 
 ### References
