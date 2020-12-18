@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 const shell = require("shelljs");
 const inquirer = require("inquirer");
 
@@ -19,16 +21,15 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then(answers => {
-    const { projectName } = answers; 
-    shell.cd('..');
+    const { projectName } = answers;
     shell.exec(`mkdir ${projectName}`);
     shell.cd(`${projectName}`);
     shell.exec(`git clone ${targetRepo} .`);
     shell.exec('git checkout --orphan latest_branch');
     shell.exec('git add -A');
     shell.exec('git commit -am "init the new project and install Next.js, Redux, and Styled-Components"');
-    shell.exec('git branch -D master');
+    shell.exec('git branch -D main');
     shell.exec('git branch -m master');
+    shell.echo('New project has been created!');
 });
 
-shell.echo('New project has been created!');

@@ -1,17 +1,19 @@
 {
-  "name": "create-nrs-template",
-  "version": "1.0.0",
-  "description": "",
+  "name": "create-nrs-web",
+  "version": "1.0.4",
+  "description": "It's a npx command tool to create a project with default folders and files for Next.js, Redux, and Styled-Components.",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JenHsuan/create-nrs-template.git"
-  },
-  "author": "",
+  "keywords": [
+    "redux",
+    "next.js",
+    "npx",
+    "nodejs"
+  ],
+  "author": "jenhsuanhsieh",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JenHsuan/create-nrs-template/issues"
