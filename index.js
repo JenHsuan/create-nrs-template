@@ -30,6 +30,7 @@ inquirer.prompt(questions).then(answers => {
     shell.exec('git commit -am "init the new project and install Next.js, Redux, and Styled-Components"');
     shell.exec('git branch -D main');
     shell.exec('git branch -m master');
+    shell.exec('git remote remove origin');
     shell.echo('New project has been created!');
 });
 

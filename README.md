@@ -2,10 +2,12 @@
 * It's a npx command tool to create a project with default folders and files for Next.js, Redux, and Styled-Components.
 
 ### Usages
-* Installation
+1. Installation
 ```
 npx create-nrs-web
 ```
+
+2. Modify READEME.md for the new project
 
 ### References
 * [Build and Publish Your First Command Line Application with Node.js and NPM | by Cruz | Medium](https://medium.com/@cruzw/build-and-publish-your-first-command-line-application-with-npm-6192f4044779)
