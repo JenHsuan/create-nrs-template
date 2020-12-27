@@ -1,16 +1,55 @@
-## create-nrs-web
-* It's a npx command tool to create a project with default folders and files for Next.js, Redux, and Styled-Components.
+# create-nrs-web
+It's a template based on create-next-app that contains default folders and files for building a new project.
+The stack of this template contains the following items.
+* Next.js
+* Redux/Redux-thunk/hooks
+* Styled-Components
 
-### Usages
+## Usages
 1. Installation
+
 ```
+
 npx create-nrs-web
+
 ```
 
-2. Modify READEME.md for the new project
+2. Modify README.md for the new project
 
-### References
-* [Build and Publish Your First Command Line Application with Node.js and NPM | by Cruz | Medium](https://medium.com/@cruzw/build-and-publish-your-first-command-line-application-with-npm-6192f4044779)
-* [sheshbabu/gitrmbr: CLI for deleting git branches](https://github.com/sheshbabu/gitrmbr)
+### Next.js
+
+```
+
+npm run dev
+
+```
+
+### Proxy
+
+```
+
+npm run proxy
+
+```
+
+### Test (Jest and Enzyme)
+
+```
+
+npm run test
+
+```
+
+## References
+* [How to Publish an npx Command to Improve productivity?](https://medium.com/a-layman/how-to-publish-an-npx-command-to-improve-the-productivity-23c6480c176)
+* [Test Components in the Next.js Project with Jest and Enzyme- Part 1. Steps for the Environment setting](https://medium.com/a-layman/test-components-in-the-next-js-7f4bc5fbaa92)
+* [Redux Middleware- The differences between Redux-thunk and Redux-saga](https://medium.com/a-layman/redux-middleware-the-differences-between-redux-think-and-redux-saga-1e226f5a772a)
+* [Day 28 of #100DaysOfCode: Create the Proxy for Next.js application](https://dev.to/jenhsuan/day-28-of-100daysofcode-create-the-proxy-for-next-js-application-28g7)
 * [Publishing an npx command to npm](http://www.sheshbabu.com/posts/publishing-npx-command-to-npm/)
 * [NodeJs 交互式命令行工具 Inquirer.js - 开箱指南](https://juejin.cn/post/6844903480700698638)
+
+
+## About
+* [Author](https://jenhsuan.github.io/ALayman/profile.html)
+* [100DaysOfCode](https://dev.to/jenhsuan)
+* [Medium](https://medium.com/a-layman)
