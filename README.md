@@ -2,7 +2,7 @@
 It's a template based on create-next-app that contains default folders and files for building a new project.
 The stack of this template contains the following items.
 * Next.js
-* Redux/Redux-thunk/hooks
+* Redux/Redux-thunk/Redux-saga
 * Styled-Components
 
 ## Usages
@@ -37,10 +37,12 @@ npm run proxy
 ```
 
 npm run test
+npm run test-coverage
 
 ```
 
 ## References
+* [Redux Middleware- The differences between Redux-thunk and Redux-saga](https://medium.com/a-layman/redux-middleware-the-differences-between-redux-think-and-redux-saga-1e226f5a772a)
 * [How to Publish an npx Command to Improve productivity?](https://medium.com/a-layman/how-to-publish-an-npx-command-to-improve-the-productivity-23c6480c176)
 * [Test Components in the Next.js Project with Jest and Enzyme- Part 1. Steps for the Environment setting](https://medium.com/a-layman/test-components-in-the-next-js-7f4bc5fbaa92)
 * [Redux Middleware- The differences between Redux-thunk and Redux-saga](https://medium.com/a-layman/redux-middleware-the-differences-between-redux-think-and-redux-saga-1e226f5a772a)
