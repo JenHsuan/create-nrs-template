@@ -55,3 +55,9 @@ npm run test-coverage
 * [Author](https://jenhsuan.github.io/ALayman/profile.html)
 * [100DaysOfCode](https://dev.to/jenhsuan)
 * [Medium](https://medium.com/a-layman)
+
+## Release notes
+* 1.3.6: fix the bux for the new branch's name
+* 1.3.5: resolve merged confilcts
+* 1.3.4: remove log messages
+* 1.3.3: fix the bug when riunning on Windows
