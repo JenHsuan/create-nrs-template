@@ -57,7 +57,8 @@ npm run test-coverage
 * [Medium](https://medium.com/a-layman)
 
 ## Release notes
+* 1.3.7: fix the bux for redux-saga
 * 1.3.6: fix the bux for the new branch's name
 * 1.3.5: resolve merged confilcts
 * 1.3.4: remove log messages
-* 1.3.3: fix the bug when riunning on Windows
+* 1.3.3: fix the bug when running on Windows
