@@ -41,7 +41,17 @@ npm run test-coverage
 
 ```
 
+## Release notes
+* 1.4.1: add a reference
+### 1.4.0: add test cases for Redux (Redux-thunk/Redux-saga)
+* 1.3.7: fix the bug for redux-saga
+* 1.3.6: fix the bug for the new branch's name
+* 1.3.5: resolve merged confilcts
+* 1.3.4: remove log messages
+* 1.3.3: fix the bug when running on Windows
+
 ## References
+* [Test Components in the Next.js- Part 2. Test Redux Components in different middlewares (Redux-thunk and Redux-saga)](https://medium.com/a-layman/test-components-in-the-next-js-part-2-test-redux-components-in-different-middlewares-49af5b0be7fd)
 * [Redux Middleware- The differences between Redux-thunk and Redux-saga](https://medium.com/a-layman/redux-middleware-the-differences-between-redux-think-and-redux-saga-1e226f5a772a)
 * [How to Publish an npx Command to Improve productivity?](https://medium.com/a-layman/how-to-publish-an-npx-command-to-improve-the-productivity-23c6480c176)
 * [Test Components in the Next.js Project with Jest and Enzyme- Part 1. Steps for the Environment setting](https://medium.com/a-layman/test-components-in-the-next-js-7f4bc5fbaa92)
@@ -56,9 +66,3 @@ npm run test-coverage
 * [100DaysOfCode](https://dev.to/jenhsuan)
 * [Medium](https://medium.com/a-layman)
 
-## Release notes
-* 1.3.7: fix the bux for redux-saga
-* 1.3.6: fix the bux for the new branch's name
-* 1.3.5: resolve merged confilcts
-* 1.3.4: remove log messages
-* 1.3.3: fix the bug when running on Windows

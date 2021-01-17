@@ -39,7 +39,7 @@ const questions = [
 ];
 
 inquirer.prompt(questions).then(answers => {
-    let branchName = '';
+    let branchName = 'main';
     const { projectName, addMiddleware, addProxy, addTests } = answers;
     shell.exec(`mkdir ${projectName}`);
     shell.cd(`${projectName}`);
@@ -56,7 +56,7 @@ inquirer.prompt(questions).then(answers => {
     } else {
         //saga
         if (addProxy && addTests) {
-            branchName = 'saga-dev';
+            branchName = 'saga-proxy-jest';
         } else if (addProxy) {
             branchName = 'saga-proxy';
         } else if (addTests) {
