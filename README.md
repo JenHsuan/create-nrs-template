@@ -37,11 +37,11 @@ npm run proxy
 ```
 
 npm run test
-npm run test-coverage
 
 ```
 
 ## Release notes
+### 1.5.2: support the page level Redux's state modifications
 * 1.4.1: add a reference
 ### 1.4.0: add test cases for Redux (Redux-thunk/Redux-saga)
 * 1.3.7: fix the bug for redux-saga

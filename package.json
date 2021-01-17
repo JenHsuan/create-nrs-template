@@ -1,6 +1,6 @@
 {
   "name": "create-nrs-web",
-  "version": "1.4.1",
+  "version": "1.5.2",
   "description": "It's a npx command tool to create a project with default folders and files for Next.js, Redux, and Styled-Components.",
   "main": "index.js",
   "bin": "index.js",

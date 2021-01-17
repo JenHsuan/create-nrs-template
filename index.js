@@ -20,8 +20,14 @@ const questions = [
     },
     {
         type: "confirm",
+        name: "usePageLevelRedux",
+        message: "Do you want to use page level Redux?",
+        default: false
+    },
+    {
+        type: "confirm",
         name: "addMiddleware",
-        message: "Do you want to use react-thunk as the middleware? yes: react-thunk / no: react-saga",
+        message: "Do you want to use react-thunk as the middleware? (will use next-promise-middleware for the page level Redux)",
         default: false
     },
     {
@@ -40,27 +46,45 @@ const questions = [
 
 inquirer.prompt(questions).then(answers => {
     let branchName = 'main';
-    const { projectName, addMiddleware, addProxy, addTests } = answers;
+    const { projectName, usePageLevelRedux, addMiddleware, addProxy, addTests } = answers;
     shell.exec(`mkdir ${projectName}`);
     shell.cd(`${projectName}`);
     shell.exec(`git clone ${targetRepo} .`);
-    if (addMiddleware) {
-        //thunk
+
+    if (usePageLevelRedux) {
+        //redux-next-wrapper & next-promise-middleware
         if (addProxy && addTests) {
-            branchName = 'jestCommitsForProxy';
+            branchName = 'use-next-wrapper-proxy-jest';
         } else if (addProxy) {
-            branchName = 'proxyCommits';
+            branchName = 'use-next-wrapper-proxy';
         } else if (addTests) {
-            branchName = 'jestCommits';
+            branchName = 'use-next-wrapper-jest';
+        } else {
+            branchName = 'use-next-wrapper';
         }
     } else {
-        //saga
-        if (addProxy && addTests) {
-            branchName = 'saga-proxy-jest';
-        } else if (addProxy) {
-            branchName = 'saga-proxy';
-        } else if (addTests) {
-            branchName = 'saga-jest';
+        if (addMiddleware) {
+            //thunk
+            if (addProxy && addTests) {
+                branchName = 'jestCommitsForProxy';
+            } else if (addProxy) {
+                branchName = 'proxyCommits';
+            } else if (addTests) {
+                branchName = 'jestCommits';
+            } else {
+                branchName = 'main';
+            }
+        } else {
+            //saga
+            if (addProxy && addTests) {
+                branchName = 'saga-proxy-jest';
+            } else if (addProxy) {
+                branchName = 'saga-proxy';
+            } else if (addTests) {
+                branchName = 'saga-jest';
+            } else {
+                branchName = 'useSaga';
+            }
         }
     }
     shell.exec(`git checkout -B ${branchName} remotes/origin/${branchName}`);
