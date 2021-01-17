@@ -41,6 +41,7 @@ npm run test
 ```
 
 ## Release notes
+* 1.5.3: add a references
 ### 1.5.2: support the page level Redux's state modifications
 * 1.4.1: add a reference
 ### 1.4.0: add test cases for Redux (Redux-thunk/Redux-saga)
@@ -51,14 +52,20 @@ npm run test
 * 1.3.3: fix the bug when running on Windows
 
 ## References
+### Page level Redux
+* [kirill-konshin/next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper#server-and-client-state-separation)
+* [Next.js pre-rendering](https://nextjs.org/docs/basic-features/pages#two-forms-of-pre-rendering)
+### Jest
 * [Test Components in the Next.js- Part 2. Test Redux Components in different middlewares (Redux-thunk and Redux-saga)](https://medium.com/a-layman/test-components-in-the-next-js-part-2-test-redux-components-in-different-middlewares-49af5b0be7fd)
-* [Redux Middleware- The differences between Redux-thunk and Redux-saga](https://medium.com/a-layman/redux-middleware-the-differences-between-redux-think-and-redux-saga-1e226f5a772a)
-* [How to Publish an npx Command to Improve productivity?](https://medium.com/a-layman/how-to-publish-an-npx-command-to-improve-the-productivity-23c6480c176)
 * [Test Components in the Next.js Project with Jest and Enzyme- Part 1. Steps for the Environment setting](https://medium.com/a-layman/test-components-in-the-next-js-7f4bc5fbaa92)
+### Redux-saga
 * [Redux Middleware- The differences between Redux-thunk and Redux-saga](https://medium.com/a-layman/redux-middleware-the-differences-between-redux-think-and-redux-saga-1e226f5a772a)
-* [Day 28 of #100DaysOfCode: Create the Proxy for Next.js application](https://dev.to/jenhsuan/day-28-of-100daysofcode-create-the-proxy-for-next-js-application-28g7)
+### npm
+* [How to Publish an npx Command to Improve productivity?](https://medium.com/a-layman/how-to-publish-an-npx-command-to-improve-the-productivity-23c6480c176)
 * [Publishing an npx command to npm](http://www.sheshbabu.com/posts/publishing-npx-command-to-npm/)
 * [NodeJs 交互式命令行工具 Inquirer.js - 开箱指南](https://juejin.cn/post/6844903480700698638)
+### Others
+* [Day 28 of #100DaysOfCode: Create the Proxy for Next.js application](https://dev.to/jenhsuan/day-28-of-100daysofcode-create-the-proxy-for-next-js-application-28g7)
 
 
 ## About
