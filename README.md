@@ -1,6 +1,7 @@
 # create-nrs-web
 It's a template based on create-next-app that contains default folders and files for building a new project.
 The stack of this template contains the following items.
+* JavaScript/TypeScript
 * Next.js
 * Redux/Redux-thunk/Redux-saga
 * Styled-Components
@@ -41,6 +42,8 @@ npm run test
 ```
 
 ## Release notes
+### 1.6.3 support TypeScript
+* 1.5.4: fix the bug for git clone
 * 1.5.3: add a references
 ### 1.5.2: support the page level Redux's state modifications
 * 1.4.1: add a reference
