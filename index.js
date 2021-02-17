@@ -101,7 +101,7 @@ inquirer.prompt(questions).then(answers => {
         }
     } else {
         //TypeScript
-        branch = "ts-main";
+        branchName = "ts-main";
     }
 
     shell.exec(`git checkout -B ${branchName} remotes/origin/${branchName}`);
