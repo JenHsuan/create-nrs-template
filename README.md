@@ -4,7 +4,7 @@ The stack of this template contains the following items.
 * JavaScript/TypeScript
 * Next.js
 * Redux/Redux-thunk/Redux-saga
-* Styled-Components
+* Styled-Components: provides the basic flex-box layout
 
 ## Usages
 1. Installation
@@ -42,6 +42,9 @@ npm run test
 ```
 
 ## Release notes
+### 1.7.0 provide the basic layout
+* 1.6.6: fix the bug for git clone
+* 1.6.5: fix the bug for git clone
 ### 1.6.3 support TypeScript
 * 1.5.4: fix the bug for git clone
 * 1.5.3: add a references
