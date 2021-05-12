@@ -4,6 +4,7 @@ const shell = require("shelljs");
 const inquirer = require("inquirer");
 
 const targetRepo = 'https://github.com/JenHsuan/next-redux-styled-template.git';
+const enableProfilerCommit = '8d861d4d64fdc7b93a76c7e7862e3029b6d990f4';
 
 //Check if git is enable
 if (!shell.which('git')) {
@@ -44,20 +45,26 @@ const questions = [
         type: "confirm",
         name: "addTests",
         message: "Do you want to add the Jest and Enzyme template files?",
-        default: false,
-        when: (answers) => answers.languageType === "JavaScript"
+        default: false
+    },
+    {
+        type: "confirm",
+        name: "enableProfiler",
+        message: "Do you want to add the next config for enabling for React profiler in production?",
+        default: false
     }
 ];
 
 inquirer.prompt(questions).then(answers => {
     let branchName = 'main';
-    const { projectName, languageType, middlewareType, addProxy, addTests } = answers;
+    const { projectName, languageType, middlewareType, addProxy, addTests, enableProfiler } = answers;
     console.log("--------------------");
     console.log("Your preferences:");
     console.log(`Language type: ${languageType}`);
     console.log(`Middleware type: ${middlewareType === undefined ? "redux-thunk" : middlewareType}`);
     console.log(`Add proxy: ${addProxy === undefined ? "false" : addProxy}`);
     console.log(`Add tests: ${addTests === undefined ? "false" : addTests}`);
+    console.log(`Enable profiler in production: ${enableProfiler === undefined ? "false" : enableProfiler}`);
     console.log("--------------------");
     shell.exec(`mkdir ${projectName}`);
     shell.cd(`${projectName}`);
@@ -102,9 +109,15 @@ inquirer.prompt(questions).then(answers => {
     } else {
         //TypeScript
         branchName = "ts-main";
+        if (addTests) {
+            branchName = "ts-main-jest";
+        }
     }
 
     shell.exec(`git checkout -B ${branchName} remotes/origin/${branchName}`);
+    if (enableProfiler) {
+        shell.exec(`git cherry-pick ${enableProfilerCommit}`);
+    }
     shell.exec('git checkout --orphan latest_branch');
     shell.exec('git add -A');
     shell.exec('git commit -am "init the new project and install Next.js, Redux, and Styled-Components"');

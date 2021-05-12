@@ -1,13 +1,18 @@
 # create-nrs-web
-It's a template based on create-next-app that contains default folders and files for building a new project.
-The stack of this template contains the following items.
-* JavaScript/TypeScript
+It's a template based on create-next-app. The template provides bulti-in settings for the following items to make the website creation much esaier and flexible.
 * Next.js
-* Redux/Redux-thunk/Redux-saga
+* Redux
+* Redux middleware (choices: Redux-thunk/Redux-saga/Promise-middleware)
 * Styled-Components: provides the basic flex-box layout
+* Nelify file
+
+And the following options.
+* Proxy
+* TypeScript
+* Jest
 
 ## Usages
-1. Installation
+### 1. Create a new project
 
 ```
 
@@ -15,9 +20,9 @@ npx create-nrs-web
 
 ```
 
-2. Modify README.md for the new project
-
-### Next.js
+### 2. Modify README.md for the new project
+### 3. Launch at the development environment
+* Next.js
 
 ```
 
@@ -25,7 +30,7 @@ npm run dev
 
 ```
 
-### Proxy
+* Proxy
 
 ```
 
@@ -33,7 +38,7 @@ npm run proxy
 
 ```
 
-### Test (Jest and Enzyme)
+* Test (Jest and Enzyme)
 
 ```
 
@@ -41,7 +46,22 @@ npm run test
 
 ```
 
+### 4. Deploy to Nelify
+* Commit and push to the Github repository
+* Open Nelify and select the repository
+* Deploy
+
+## Demo
+* [Demo site](https://create-nrs-web-demo.netlify.app/)
+
+## Tutorial
+* [create-nrs-web — A Way to Build the Next.js, Redux, and Styled-Components Website Efficiently](https://medium.com/a-layman/create-nrs-web-a-way-to-build-the-next-js-redux-and-styled-components-website-efficiently-e1605b56e81)
+
 ## Release notes
+* 1.9.1: fix the bug for the new option
+### 1.9.0: provide an option to enable React profiler in production
+* 1.8.3: support Jest for TypeScript
+### 1.8.0 provide the default Nelify file
 ### 1.7.0 provide the basic layout
 * 1.6.6: fix the bug for git clone
 * 1.6.5: fix the bug for git clone
@@ -58,6 +78,12 @@ npm run test
 * 1.3.3: fix the bug when running on Windows
 
 ## References
+### TypeScript
+* [Jest + TypeScript：建置測試環境](https://titangene.github.io/article/jest-typescript.html)
+* [ts-node 的那些坑](https://www.jianshu.com/p/cbd3bcdbb60b)
+* [CONFIGURING JEST AND ENZYME IN CREATE REACT APP ON TYPESCRIPT](https://thetrevorharmon.com/blog/configuring-jest-and-enzyme-in-create-react-app-on-typescript)
+* [Create react app typescript: testing with jest and enzyme](https://feralamillo.medium.com/create-react-app-typescript-testing-with-jest-and-enzyme-869fdba1bd3)
+
 ### Page level Redux
 * [kirill-konshin/next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper#server-and-client-state-separation)
 * [Next.js pre-rendering](https://nextjs.org/docs/basic-features/pages#two-forms-of-pre-rendering)
